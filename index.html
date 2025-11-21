@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker's Club Noisy le Grand - Connexion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="assets/logo-club.png" alt="Biker's Club Noisy le Grand" class="logo">
+        </header>
+
+        <main class="login-container">
+            <div class="cartouche">
+                <h1>CONNEXION</h1>
+                
+                <form class="login-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="userType">Je me connecte en tant que :</label>
+                        <select id="userType" name="userType" class="form-input">
+                            <option value="encadrant">Encadrant</option>
+                            <option value="administrateur">Administrateur</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Identifiant :</label>
+                        <input type="text" id="username" name="username" class="form-input" placeholder="Votre identifiant" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Mot de passe :</label>
+                        <input type="password" id="password" name="password" class="form-input" placeholder="Votre mot de passe" required>
+                    </div>
+
+                    <button type="submit" class="login-btn">Se connecter</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
